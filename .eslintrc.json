@@ -1,0 +1,28 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended",
+    "standard-with-typescript",
+    "plugin:react-hooks/recommended"
+  ],
+  "overrides": [],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json",
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": ["react", "react-refresh"],
+  "rules": {
+    "react-refresh/only-export-components": "warn",
+    "react/react-in-jsx-scope": "off",
+    "import/no-absolute-path": 0,
+    "@typescript-eslint/space-before-function-paren": "off",
+    "@typescript-eslint/no-confusing-void-expression": "off"
+  }
+}
